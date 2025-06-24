@@ -1,4 +1,3 @@
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #ffffff 0%, #d9deff 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e7fb 100%);
     color: #363636;
     line-height: 1.6;
     min-height: 100vh;
@@ -19,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 5%;
+    padding: 1.0rem 5%;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -28,7 +27,7 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #6c5ce7;
 }
@@ -39,19 +38,18 @@ body {
 }
 
 .nav-links li {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.3s;
+    transition: color 0.3s;
     position: relative;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover {
     color: #6c5ce7;
 }
 
@@ -66,166 +64,126 @@ body {
     transition: width 0.3s;
 }
 
-.nav-links a:hover::after, .nav-links a.active::after {
+.nav-links a:hover::after {
     width: 100%;
 }
 
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/* About Hero Section */
-.about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 5%;
-}
-
-.about-hero {
+/* Hero Section */
+.hero {
     display: flex;
-    flex-direction: column;
+    min-height: 80vh;
+    padding: 2rem 5%;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
 }
 
-.about-content {
-    width: 100%;
-    padding-right: 0;
-    text-align: center;
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
 }
 
-.highlight {
-    color: #6c5ce7;
-}
-
-.about-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #2d3436;
     line-height: 1.2;
 }
 
-.about-content h2 {
+.hero-content p {
     font-size: 1.2rem;
-    font-weight: 400;
-    color: #666;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    color: #636e72;
+    max-width: 600px;
 }
 
 .divider {
-    height: 3px;
-    width: 80px;
-    background: #6c5ce7;
-    margin: 1.5rem auto;
-    border-radius: 3px;
-}
-
-.about-content p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-    text-align: left;
-}
-
-.about-details {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #6c5ce7, transparent);
     margin: 2rem 0;
-    text-align: left;
+    width: 80%;
 }
 
-.detail-item {
+.cta {
     display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.detail-item i {
-    font-size: 1.5rem;
-    color: #6c5ce7;
-    margin-top: 5px;
-}
-
-.detail-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.detail-item p {
-    font-size: 1rem;
-    margin: 0;
-    color: #666;
+    align-items: center;
+    gap: 15px;
 }
 
 .btn {
     display: inline-block;
     background: #6c5ce7;
-    color: white;
-    padding: 12px 30px;
+    color: #fff;
+    padding: 14px 30px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
     border: 2px solid #6c5ce7;
-    margin-top: 1rem;
 }
 
 .btn:hover {
     background: transparent;
     color: #6c5ce7;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(108, 92, 231, 0.2);
+    box-shadow: 0 10px 20px rgba(108, 92, 231, 0.3);
 }
 
-.hero-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+  /* Perbaikan untuk menampilkan foto secara penuh */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%; /* Tambahkan tinggi 100% */
+        }
+
+        .photo-frame {
+            width: 350px;
+            height: 430px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Solusi untuk menampilkan foto secara penuh */
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Memastikan foto mengisi frame tanpa distorsi */
+            border-radius: 15px;
+            transition: transform 0.5s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05); /* Efek zoom saat dihover */
+        }
+.shape {
+    position: absolute;
+    z-index: -1;
 }
 
-.photo-frame {
-    width: 250px;
-    height: 350px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.portfolio-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.5s ease;
-}
-
-.portfolio-photo:hover {
-    transform: scale(1.05);
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    top: -30px;
+    right: -10px;
+    opacity: 0.7;
 }
 
 /* Footer */
-.footer {
+footer {
     text-align: center;
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
-    margin-top: 2rem;
+    margin: 0 5%;
     border-radius: 15px;
     color: #636e72;
     font-size: 0.9rem;
@@ -235,8 +193,8 @@ body {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 20px;
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -257,79 +215,27 @@ body {
     background: #5d4fcf;
 }
 
-/* Desktop Styles */
-@media (min-width: 768px) {
-    .about-hero {
-        flex-direction: row;
-        text-align: left;
-        gap: 4rem;
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .about-content {
-        text-align: left;
-        padding-right: 50px;
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
     }
 
     .divider {
-        margin: 1.5rem 0;
+        margin: 2rem auto;
     }
 
-    .hero-image {
-        margin-top: 0;
+    .cta {
+        justify-content: center;
     }
 
-    .photo-frame {
-        width: 300px;
-        height: 420px;
-    }
-
-    .logo {
-        font-size: 1.8rem;
-    }
-
-    .nav-links a {
-        font-size: 1rem;
-    }
-}
-
-/* Mobile Menu */
-@media (max-width: 768px) {
     .nav-links {
-        position: fixed;
-        right: -100%;
-        top: 70px;
-        width: 50%;
-        height: calc(100vh - 70px);
-        background-color: rgba(255, 255, 255, 0.95);
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 2rem;
-        transition: right 0.5s ease;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links li {
-        margin: 1rem 0;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .hamburger.active div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+        display: none;
     }
 }
