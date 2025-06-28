@@ -1,0 +1,62 @@
+
+
+
+ <div class="project-card">
+                    <img src="gambar1.jpg" alt="Web Development Project">
+                    <div class="project-info">
+                        <h3></h3>
+                        <p>Full-stack e-commerce platform with payment integration</p>
+                        <div class="tech-used">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+
+
+<div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Mobile App Project">
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Android application for personal task management</p>
+                        <div class="tech-used">
+                            <span>Java</span>
+                            <span>Android Studio</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+
+  <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Design Project">
+                    <div class="project-info">
+                        <h3>UI/UX Design</h3>
+                        <p>Complete redesign of company website and mobile app</p>
+                        <div class="tech-used">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Photoshop</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+
+<nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="viewprojek.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="projek.html">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+Aktif dalam organisasi & perkuliahan menjadikan saya terbiasa dalam berbagai situasi dan kondisi, mudah beradaptasi serta terbiasa bekerja secara tim. Kemampuan public speaking dan berpikir kritis saya kembangkan melalui kegiatan organisasi dan akademik. Dengan IPK tinggi dan aktif dalam berbagai program pengembangan diri, saya dikenal sebagai mahasiswa yang proaktif dan berorientasi pada prestasi maupun kompetensi.
