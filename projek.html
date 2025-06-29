@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build the Web</title>
-    <link rel="stylesheet" href="projek.css">
+    <link rel="stylesheet" href="projek.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar akan dimuat via JavaScript -->
-    <div id="navbar-placeholder"></div>
-
-    <section class="projects-section">
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="viewprojek.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="projek.html">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+<div id="navbar-placeholder"></div>
+<section class="projects-section">
         <div class="container">
             <h2>My Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="gambar1.jpg" alt="Web Development Project">
+                    <img src="Nomor1.jpg" alt="Web Development Project">
                     <div class="project-info">
                         <h3>E-Commerce Website</h3>
                         <p>Full-stack e-commerce platform with payment integration</p>
@@ -31,42 +39,94 @@
                         <a href="#" class="project-link">View Details</a>
                     </div>
                 </div>
-
-                <!-- Project 2 dan 3 tetap sama -->
-                <!-- ... -->
-            </div>
+                <!-- Project 2 tetap sama -->
+                 <div class="project-card">
+                    <img src="gambar2.png" alt="Web Development Project">
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>Full-stack e-commerce platform with payment integration</p>
+                        <div class="tech-used">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <!-- Project 3 tetap sama -->
+                <div class="project-card">
+                    <img src="gambar3.png" alt="Web Development Project">
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>Full-stack e-commerce platform with payment integration</p>
+                        <div class="tech-used">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>    
         </div>
-    </section>
-
-    <script>
-        // Load navbar dengan error handling
-        fetch('./navbar.html')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Navbar not found');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error loading navbar:', error);
-                // Fallback navbar jika file tidak ditemukan
-                document.getElementById('navbar-placeholder').innerHTML = `
-                    <nav class="navbar">
-                        <div class="logo">My Portfolio</div>
-                        <ul class="nav-links">
-                            <li><a href="viewprojek.html">Home</a></li>
-                            <li><a href="About.html">About</a></li>
-                            <li><a href="projek.html">Project</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <div class="hamburger"><i class="fas fa-bars"></i></div>
-                    </nav>
-                `;
-            });
-    </script>
-    <script src="skrip.js"></script>
+            <div class="container">
+                <h2>Organisasi & Komunitas</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="image (9).png" alt="Web Development Project">
+                        <div class="project-info">
+                            <h3>E-Commerce Website</h3>
+                            <p>Full-stack e-commerce platform with payment integration</p>
+                            <div class="tech-used">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 tetap sama -->
+                    <div class="project-card">
+                        <img src="gambarM.png" alt="Web Development Project">
+                        <div class="project-info">
+                            <h3>E-Commerce Website</h3>
+                            <p>Full-stack e-commerce platform with payment integration</p>
+                            <div class="tech-used">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Project 3 tetap sama -->
+                    <div class="project-card">
+                        <img src="anak2.jpg" alt="Web Development Project">
+                        <div class="project-info">
+                            <h3>E-Commerce Website</h3>
+                            <p>Full-stack e-commerce platform with payment integration</p>
+                            <div class="tech-used">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+       
+    </section>    
 </body>
-</html>
+</html> 
